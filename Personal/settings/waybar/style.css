@@ -1,0 +1,236 @@
+@define-color base00 #181818;
+@define-color base01 #2b2e37;
+@define-color base02 #374656;
+@define-color base03 #303c4b;
+@define-color base04 #cdd6f4;
+@define-color base05 #d8d8d8;
+@define-color base06 #e8e8e8;
+@define-color base07 #f8f8f8;
+@define-color base08 #f20202;
+@define-color base09 #7a00ff;
+@define-color base0A #ffbf00;
+@define-color base0B #00e1b4;
+@define-color base0C #064253;
+@define-color base0D #b5d5e2;
+@define-color base0E #62a1b0;
+@define-color base0F #0c5b66;
+
+* {
+  transition: none;
+  box-shadow: none;
+}
+
+#waybar {
+	/*font-family: 'Source Code Pro', sans-serif;*/
+	font-family: 'FontAwesome';
+	font-size: 1.6em;
+	font-weight: 500;
+  color: @base04;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+tooltip {
+    background: #1e1e2e;
+    opacity: 0.8;
+    font-family: 'Noto Sans';
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+#workspaces {
+  padding-left: 5px;
+  padding-right: 5px;  border-radius: 5px;
+  border: 1.5px solid @base03;
+}
+
+#workspaces button {
+  margin: 4px 0;
+  padding: 0 4px;
+  color: @base02;
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.active {
+  border-radius: 4px;
+  color: @base0B;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+  color: rgba(238, 46, 36, 1);
+}
+
+
+#mode, #cpu, #memory, #network, #idle_inhibitor, #backlight, #custom-storage, #custom-weather, #custom-mail  {
+  margin: 4px 2px;
+  padding: 0 6px;
+  min-width: 20px;
+  border-radius: 5px;
+  border: 1.5px solid @base03;
+}
+
+#pulseaudio.muted {
+  color: @base0F;
+}
+#pulseaudio.bluetooth {
+  color: @base0C;
+}
+
+
+
+#window {
+  font-size: 0.8em;
+	font-weight: 400;
+	font-family: sans-serif;
+}
+#language {
+  color: @base08;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+#custom-launch_wofi {
+  color: @base0E;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+#custom-power_btn {
+  color: @base0B;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1.5px solid @base03;
+  border-radius: 5px;
+}
+
+#custom-htop {
+  color: @base0E;
+  padding: 0px 8px;
+  margin: 0px 3px;
+  border: 0px;
+  font-size: 1.2em;
+}
+#custom-hardinfo {
+  color: @base0E;
+  padding: 0px 8px;
+  margin: 0px 3px;
+  border: 0px;
+  font-size: 1.2em;
+}
+#disk {
+  color: @base0E;
+  font-size: 1.2em;
+  padding: 0px 8px;
+  margin: 0px 3px;
+  border: 0px;
+  font-size: 1.2em;
+}
+#custom-web {
+  color: @base0E;
+  font-size: 1.2em;
+  padding: 0px 8px;
+  margin: 0px 3px;
+  border: 0px;
+  font-size: 1.2em;
+}
+#custom-emacs {
+  color: @base0E;
+  font-size: 1.2em;
+  padding: 0px 8px;
+  margin: 0px 3px;
+  border: 0px;
+  font-size: 1.2em;
+}
+#custom-virt {
+  color: @base0E;
+  font-size: 1.2em;
+  padding: 0px 8px;
+  margin: 0px 3px;
+  border: 0px;
+  font-size: 1.2em;
+}
+#battery {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: 1.5px solid @base03;
+}
+#battery.good, #battery.full {
+  color: @base0B;
+}
+#battery.discharging {
+  color: @base0A;
+}
+#battery.warning {
+  color: @base09;
+}
+#battery.critical {
+  color: @base08;
+}
+#battery.charging {
+  color: @base0C;
+}
+#battery.plugged {
+  color: @base02;
+}
+#custom-updates {
+  color: @base0E;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+#pulseaudio {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  color: @base0D;
+}
+#pulseaudio.muted {
+  color: @base08;
+}
+#temperature {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  color: @base0F;
+}
+#temperature.critical {
+  color: @base08;
+}
+#clock {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1.5px solid @base03;
+  border-radius: 5px;
+  color: @base07;
+  font-size: 0.9em;
+}
+#tray {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1.5px solid @base03;
+  border-radius: 5px;
+  padding: 0 6px;
+  font-family: "Noto sans";
+  font-weight: 500;
+  font-size: 0.7em;
+}
+#tray * {
+  padding: 0 6px;
+  border-left: 1px solid @base00;
+}
+#tray *:first-child {
+  border-left: none;
+}

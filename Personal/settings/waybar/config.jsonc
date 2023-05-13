@@ -1,0 +1,268 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 44, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    "mod": "dock",
+    "gtk-layer-shell": true,
+    "exclusive": true,
+    //"output": "!eDP-1",
+    "passthrough": false,
+
+    // Choose the order of the modules
+
+    "modules-left": ["custom/launch_wofi","wlr/workspaces","hyprland/language"],
+    "modules-center": ["custom/updates","pulseaudio","temperature"],
+    //"modules-center": ["custom/launch_wofi","custom/htop","disk","custom/web","custom/emacs","custom/virt",],
+    //"modules-center": ["image/htop","image/hardinfo","image/web","image/emacs","image/virt",],
+    "modules-right": ["tray","clock","custom/power_btn"],
+
+    // Modules configuration
+    //-------------------------LEFT-----------------------------------------
+
+    "custom/launch_wofi": {
+        "format": "",
+        "on-click": "pkill wofi || wofi -c ~/.config/wofi/config_top",
+        //"on-click": "alacritty &",
+
+        "tooltip": false
+    },
+
+    "custom/power_btn": {
+        "format": "",
+        "on-click": "sh -c '(archlinux-logout)' & disown",
+        "tooltip": false
+    },
+
+     "wlr/workspaces": {
+         //"disable-scroll": true,
+         "on-click": "activate",
+         // "all-outputs": false,
+         "all-outputs": true,
+         //"format": "{name}: {icon}",
+         "format": "{icon}",
+         //"format": "{name}",
+         "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
+         "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null",
+         "format-icons": {
+             "urgent": "",
+             "focused": "",
+             "default": "",
+             "active": ""
+         }
+     },
+
+    "custom/updates": {
+        "format": "{icon}",
+        "format-alt": " {}",
+        "return-type": "json",
+        "format-icons": {
+            "has-updates": "",
+            "updated": ""
+        },
+        "exec-if": "which waybar-module-pacman-updates",
+        "exec": "waybar-module-pacman-updates"
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-de": "",
+        "format-ru": "",
+    },
+
+    //-------------------------CENTER-----------------------------------------
+
+    "image/htop": {
+        "path": "/usr/share/icons/Papirus-Dark/48x48/apps/htop.svg",
+        "size": 48,
+        "on-click": "alacritty -e htop",
+        "tooltip": false
+    },
+
+    "image/hardinfo": {
+        "path": "/usr/share/icons/Papirus-Dark/48x48/apps/hardinfo.svg",
+        "size": 48,
+        "on-click": "hardinfo",
+        "tooltip": false
+    },
+
+    "image/web": {
+        "path": "/usr/share/icons/Papirus-Dark/48x48/apps/brave.svg",
+        "size": 48,
+        "on-click": "brave",
+        "tooltip": false
+    },
+
+    "image/emacs": {
+        "path": "/usr/share/icons/Papirus-Dark/48x48/apps/emacs.svg",
+        "size": 48,
+        "on-click": "emacsclient -c",
+        "tooltip": false
+    },
+
+    "image/virt": {
+        "path": "/usr/share/icons/Papirus-Dark/48x48/apps/qemu.svg",
+        "size": 48,
+        "on-click": "virt-manager",
+        "tooltip": false
+    },
+
+
+
+
+
+    "custom/htop": {
+        "format": "",
+        "on-click": "alacritty -e htop",
+        "tooltip": false
+    },
+
+    "disk": {
+        "interval": 30,
+        "format": "󰋊",
+        "path": "/",
+        "tooltip": true,
+        "tooltip-format": "gdu, ncdu HDD - {used} used out of {total} on {path} ({percentage_used}%)",
+        //"on-click": "flatpak run org.gnome.baobab",
+        "on-click": "gnome-disks",
+        //"on-click": "gparted",
+    },
+
+    "custom/web": {
+        "format": "",
+        "on-click": "brave",
+        "tooltip": false
+    },
+
+    "custom/emacs": {
+        "format": "",
+        "on-click": "emacsclient -c",
+        "tooltip": false
+    },
+
+    "custom/virt": {
+        "format": "",
+        "on-click": "virt-manager",
+        "tooltip": false
+    },
+    //-------------------------RIGHT-----------------------------------------
+
+    "battery": {
+        "states": {
+            "good": 100,
+            "discharging": 99,
+            "warning": 50,
+            "critical": 30
+        },
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
+        "format-alt": "{capacity}% {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "pulseaudio": {
+        //"scroll-step": 10, // %, can be a float
+        "format": "{icon}",
+        "tooltip-format": "{volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        //"on-scroll-up": "~/.config/waybar/scripts/volume --inc",
+        //"on-scroll-down": "~/.config/waybar/scripts/volume --dec",
+        "format-muted": "",
+        "format-icons": {
+            //"headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["","","", "",""]
+        },
+        "on-click": "pamixer -t",
+        "on-click-right": "pavucontrol",
+        "on-scroll-up": "exec swayosd --output-volume raise",
+        "on-scroll-down": "exec  swayosd --output-volume lower",
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C {icon}",
+        "format": "{icon}",
+        "format-icons": ["","","","", "", ""],
+        "on-click": "hardinfo",
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 0
+    },
+    "clock": {
+        "timezone": "Europe/Berlin",
+        "format-alt": "{:%A, %B %d, %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    //"weeks-pos"     : "left",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+    //-------------------------UNUSED-----------------------------------------
+
+    "hyprland/window": {
+        "max-length": 50,
+        "separate-outputs": true
+    },
+    "keyboard-state": {
+        "numlock": false,
+        "capslock": false,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "backlight": {
+        "device": "nvidia_0",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}",
+        "format-source-muted": "     ",
+        "on-click": "pamixer --default-source -t",
+        "on-click-right": "pavucontrol",
+        //"on-scroll-up": "pamixer --default-source -i 5",
+        //"on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+}
