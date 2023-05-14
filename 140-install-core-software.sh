@@ -97,6 +97,7 @@ qt5-wayland
 qt5ct
 ripgrep
 rsync
+sddm
 slurp
 smartmontools
 solaar

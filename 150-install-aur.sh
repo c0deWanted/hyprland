@@ -27,7 +27,6 @@ hyprland-nvidia-git
 libva-nvidia-driver-git
 nomacs
 #paru-bin
-sddm-git
 #swaylock-effects
 swayosd-git
 #swww
@@ -48,7 +47,6 @@ for name in "${list[@]}" ; do
 done
 
 yay -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk &
-sudo systemctl enable sddm.service
 
 sleep 5
 sudo sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
