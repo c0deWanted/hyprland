@@ -97,12 +97,12 @@ qt5-wayland
 qt5ct
 ripgrep
 rsync
-sddm
 slurp
 smartmontools
 solaar
 speedtest-cli
 swappy
+swaybg
 system-config-printer
 thunar
 thunar-archive-plugin
@@ -126,23 +126,20 @@ unrar
 unzip
 
 # FONTS
+adobe-source-code-pro-fonts
 adobe-source-sans-fonts
 awesome-terminal-fonts
 noto-fonts
 noto-fonts-emoji
-ttf-bitstream-vera
-ttf-dejavu
-ttf-droid
-ttf-fira-sans
-#ttf-hack
-ttf-inconsolata
+#ttf-bitstream-vera
+#ttf-dejavu
+#ttf-droid
+#ttf-fira-sans
+#ttf-inconsolata
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
-#ttf-liberation
 ttf-mononoki-nerd
-#ttf-roboto
-#ttf-roboto-mono
-#ttf-ubuntu-font-family
+ttf-nerd-fonts-symbols-common
 )
 
 count=0

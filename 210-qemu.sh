@@ -10,7 +10,7 @@ sudo pacman -S --noconfirm --needed bridge-utils
 sudo pacman -S --noconfirm --needed virt-manager
 sudo pacman -S --noconfirm --needed dnsmasq
 
-sudo systemctl enable libvirt
+sudo systemctl enable libvirtd
 sudo usermod -G kvm -a $username
 sudo virsh net-start default
 
