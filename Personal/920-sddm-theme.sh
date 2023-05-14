@@ -61,7 +61,7 @@ if grep -q "archlinux" /etc/os-release; then
 	FIND="Current=breeze"
 	REPLACE="Current=arcolinux-simplicity"
 	sudo sed -i "s/$FIND/$REPLACE/g" /etc/sddm.conf
-	sudo cp -f $installed_dir/home/oh/Pictures/Backgrounds/017.jpg /usr/share/sddm/themes/arcolinux-simplicity/images/background.jpg
+	sudo cp -f $installed_dir/home/oh/Pictures/Backgrounds/bg023.jpg /usr/share/sddm/themes/arcolinux-simplicity/images/background.jpg
 
 	if [ -f /etc/lightdm/lightdm.conf ]; then
 
