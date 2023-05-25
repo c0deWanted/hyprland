@@ -26,7 +26,7 @@
 	font-size: 1.6em;
 	font-weight: 500;
   color: @base04;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 tooltip {
@@ -43,13 +43,13 @@ tooltip {
 #workspaces {
   padding-left: 5px;
   padding-right: 5px;  border-radius: 5px;
-  border: 1.5px solid @base03;
+  /* border: 1.5px solid @base03; */
 }
 
 #workspaces button {
   margin: 4px 0;
   padding: 0 4px;
-  color: @base02;
+  color: @base0F;
 }
 
 #workspaces button.visible {
@@ -76,7 +76,7 @@ tooltip {
   padding: 0 6px;
   min-width: 20px;
   border-radius: 5px;
-  border: 1.5px solid @base03;
+  /* border: 1.5px solid @base03; */
 }
 
 #pulseaudio.muted {
@@ -111,7 +111,7 @@ tooltip {
   color: @base0B;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1.5px solid @base03;
+  /* border: 1.5px solid @base03; */
   border-radius: 5px;
 }
 
@@ -165,7 +165,7 @@ tooltip {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
-  border: 1.5px solid @base03;
+  /* border: 1.5px solid @base03; */
 }
 #battery.good, #battery.full {
   color: @base0B;
@@ -212,7 +212,7 @@ tooltip {
 #clock {
   padding-left: 10px;
   padding-right: 10px;
-  border: 1.5px solid @base03;
+  /* border: 1.5px solid @base03; */
   border-radius: 5px;
   color: @base07;
   font-size: 0.9em;
@@ -220,7 +220,7 @@ tooltip {
 #tray {
   padding-left: 10px;
   padding-right: 10px;
-  border: 1.5px solid @base03;
+  /* border: 1.5px solid @base03; */
   border-radius: 5px;
   padding: 0 6px;
   font-family: "Noto sans";

@@ -12,11 +12,11 @@
 
     // Choose the order of the modules
 
-    "modules-left": ["custom/launch_wofi","wlr/workspaces","hyprland/language"],
+    "modules-left": ["battery","wlr/workspaces","hyprland/language"],
     "modules-center": ["custom/updates","pulseaudio","temperature"],
     //"modules-center": ["custom/launch_wofi","custom/htop","disk","custom/web","custom/emacs","custom/virt",],
     //"modules-center": ["image/htop","image/hardinfo","image/web","image/emacs","image/virt",],
-    "modules-right": ["battery","tray","clock","custom/power_btn"],
+    "modules-right": ["custom/launch_wofi","tray","clock","custom/power_btn"],
 
     // Modules configuration
     //-------------------------LEFT-----------------------------------------
@@ -46,10 +46,18 @@
          "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
          "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null",
          "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "6": "",
+             "7": "",
+             "8": "",
+             "9": "",
              "urgent": "",
              "focused": "",
              "default": "",
-             "active": ""
          }
      },
 
@@ -190,7 +198,7 @@
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        "format-critical": "{temperatureC}°C {icon}",
+        "format-critical": "{icon} {temperatureC}°C}",
         "format": "{icon}",
         "format-icons": ["","","","", "", ""],
         "on-click": "hardinfo",

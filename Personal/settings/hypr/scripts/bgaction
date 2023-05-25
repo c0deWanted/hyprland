@@ -1,14 +1,6 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-#start swwww
-swww query || swww init
-
-#figure out which waybar theme is set
-THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
-
-#show the correct wallpapper based on the theme
-if [ $THEMEIS == "dark.css" ]; then
-    swww img ~/Pictures/Backgrounds/bg028.jpg
-else
-    swww img ~/Pictures/Backgrounds/bg028.jpg
-    fi
+image_tuxedo=$(find ~/Pictures/Backgrounds -type f -print0 | shuf -zn 1)
+image_dell=$(find ~/Pictures/Backgrounds -type f -print0 | shuf -zn 1)
+swaybg -o eDP-1 -i "$image_tuxedo" &
+swaybg -o HDMI-A-1 -i "$image_dell" &
