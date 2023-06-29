@@ -61,6 +61,7 @@ hblock
 htop
 inxi
 #kitty
+krusader
 kvantum
 libmad
 libreoffice-fresh

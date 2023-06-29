@@ -16,7 +16,7 @@
     "modules-center": ["custom/updates","pulseaudio","temperature"],
     //"modules-center": ["custom/launch_wofi","custom/htop","disk","custom/web","custom/emacs","custom/virt",],
     //"modules-center": ["image/htop","image/hardinfo","image/web","image/emacs","image/virt",],
-    "modules-right": ["custom/launch_wofi","tray","clock","custom/power_btn"],
+    "modules-right": ["custom/launch_wofi",/*"tray",*/"clock","custom/power_btn"],
 
     // Modules configuration
     //-------------------------LEFT-----------------------------------------
@@ -197,11 +197,13 @@
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        "format-critical": "{icon} {temperatureC}°C}",
+        "critical-threshold": 85,
+        "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon}",
+        "format-alt": "{icon} {temperatureC}°C",
         "format-icons": ["","","","", "", ""],
-        "on-click": "hardinfo",
+        "on-click": "format-alt",
+        "on-click-right": "hardinfo",
     },
     "tray": {
         "icon-size": 21,

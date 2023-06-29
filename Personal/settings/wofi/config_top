@@ -1,6 +1,6 @@
-width=600
-height=400
-location=top_left
+width=490
+height=900
+location=top_right
 show=drun
 prompt=Search...
 filter_rate=100

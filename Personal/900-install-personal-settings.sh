@@ -25,6 +25,9 @@ echo
 
 cp -rf $installed_dir/home/oh* /home/
 
+gsettings set org.gnome.desktop.interface gtk-theme "Kali-Dark"
+gsettings set org.gnome.desktop.interface icon-theme "Nordzy-dark"
+
 echo
 tput setaf 6
 echo "|» Done"
