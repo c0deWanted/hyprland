@@ -1,0 +1,40 @@
+{
+
+    // Position TOP
+    "layer": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+
+    "position": "top",
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 10,
+    // "exclusive": true,
+    // "height": 44,
+    // "mod": "dock",
+    // "gtk-layer-shell": true,
+    // "output": "!eDP-1",
+    // "passthrough": false,
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    // Choose the order of the modules
+
+    "modules-left": [
+        "hyprland/language",
+        "pulseaudio",
+        "backlight",
+        "temperature",
+        "battery",
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "group/hardware",
+        "bluetooth",
+        "tray",
+        "clock",
+        ]
+}

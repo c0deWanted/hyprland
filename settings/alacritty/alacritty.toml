@@ -1,0 +1,17 @@
+[font]
+size = 22.0
+
+[font.normal]
+family = "Mononoki Nerd Font Mono"
+style = "Regular"
+
+[window]
+opacity = 0.8
+
+[window.padding]
+x = 15
+y = 15
+
+[window.dimensions]
+columns=146
+lines=42
