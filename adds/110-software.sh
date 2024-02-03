@@ -34,6 +34,7 @@ sudo pacman -Syy &>> $INSTLOG
 list=(
 celluloid
 cpuid
+darktable
 #deadbeef
 deadbeef-git
 deluge-gtk
@@ -47,6 +48,7 @@ libreoffice-fresh
 meld
 #obsidian
 #okular
+opencl-clover-mesa
 #pv
 solaar
 )
