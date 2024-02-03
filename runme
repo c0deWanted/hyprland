@@ -115,6 +115,7 @@ software_stage=(
     nwg-look
     ntp
     nss-mdns
+    nvtop
     pacman-contrib
     pamixer
     pavucontrol

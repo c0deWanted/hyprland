@@ -81,9 +81,9 @@ tooltip {
 
 }
 
-#mode, #cpu, #memory, #network, #idle_inhibitor, #custom-storage, #custom-weather, #custom-mail  {
-  font-family: 'Noto Sans';
-  font-size: 1.0em;
+#mode, #disk, #cpu, #memory, #network, #idle_inhibitor, #custom-storage, #custom-weather, #custom-mail  {
+  font-family: 'Noto Sans Regular';
+  font-size: 28;
   margin: 4px 2px;
   padding: 0 6px;
   min-width: 20px;
@@ -164,14 +164,14 @@ tooltip {
   border: 0px;
   font-size: 1.2em;
 }
-#disk {
+/*#disk {
   color: @base0D;
   font-family: 'Noto Sans';
   font-size: 1.0em;
   padding: 0px 8px;
   margin: 0px 3px;
   border: 0px;
-}
+}*/
 #custom-web {
   color: @base0E;
   font-size: 1.2em;
@@ -198,7 +198,7 @@ tooltip {
 }
 #battery {
 	font-family: 'Noto Sans Regular';
-  font-size: 26;
+  font-size: 28;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
@@ -261,7 +261,7 @@ tooltip {
 #tray {
   padding-left: 10px;
   padding-right: 10px;
-  /* border: 1.5px solid @base03; */
+ /* border: 1.5px solid @base03; */
   border-radius: 5px;
   padding: 0 6px;
   font-family: "Noto sans";
