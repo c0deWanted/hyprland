@@ -52,22 +52,22 @@ inside-caps-lock-color=ffffff00
 inside-ver-color=ffffff00
 inside-wrong-color=ffffff00
 
-ring-color=ffffff
-ring-clear-color=ffffff
-ring-caps-lock-color=ffffff
-ring-ver-color=ffffff
-ring-wrong-color=ffffff
+ring-color=303c4b88
+ring-clear-color=303c4b88
+ring-caps-lock-color=18baeb88
+ring-ver-color=ffbf00AA
+ring-wrong-color=f20202AA
 
 line-color=00000000
-line-clear-color=ffffffFF
-line-caps-lock-color=ffffffFF
-line-ver-color=ffffffFF
-line-wrong-color=ffffffFF
+line-clear-color=00000000
+line-caps-lock-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
 
-text-color=ffffff
-text-clear-color=ffffff
-text-ver-color=ffffff
-text-wrong-color=ffffff
+text-color=ffffffAA
+text-clear-color=ffffffAA
+text-ver-color=ffffffAA
+text-wrong-color=ffffffAA
 
 bs-hl-color=ffffff
 caps-lock-key-hl-color=ffffffFF
