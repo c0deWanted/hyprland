@@ -10,7 +10,8 @@ on-touch=dismiss
 #on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
 
 # STYLE OPTIONS
-font= Mononoki Nerd Font Mono 22
+#font= Mononoki Nerd Font Mono 22
+font= Noto Sans 22
 width=680
 height=400
 margin=10

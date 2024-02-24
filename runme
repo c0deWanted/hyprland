@@ -138,6 +138,7 @@ software_stage=(
     vnstat
     wavpack
     wget
+    wireless_tools
     wlogout
     wofi
     xorg-xhost
@@ -147,6 +148,8 @@ software_stage=(
     unace
     unrar
     unzip
+    zathura
+    zathura-pdf-poppler
     # Fonts
     adobe-source-sans-fonts
     awesome-terminal-fonts
