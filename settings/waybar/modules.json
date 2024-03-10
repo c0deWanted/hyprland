@@ -12,20 +12,20 @@
             // "warning": 30,
             "critical": 30
         },
-        "format": " {capacity}% ",
-        //"format-alt": "{capacity}% {icon}",
+        "format": "{icon}",
+        "format-alt": "{capacity}% {icon}",
         "format-charging": "",
         "format-plugged": "",
         //"format-good": "", // An empty format will hide the module
         //"format-full": "",
-        //"format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
         //"format-icons": ["", "", "", "", ""]
     },
 
     "backlight": {
         // "device": "nvidia_0",
         "format": "{icon}",
-        "format-alt": "{percent}% {icon}",
+        //"format-alt": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
 
@@ -36,7 +36,7 @@
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon}",
         "format-alt": "{temperatureC}° {icon}",
-        "format-icons": ["","","","", "", ""],
+        "format-icons": ["","","","", "", ""],
         "on-click": "format-alt",
         "on-click-right": "hardinfo",
     },
@@ -53,13 +53,13 @@
         //"on-scroll-down": "~/.config/waybar/scripts/volume --dec",
         "format-muted": "",
         "format-icons": {
-            //"headphone": "",
+            "headphone": "",
             "hands-free": "",
             "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["","","", "",""]
+            "default": ["","", "", "",""]
         },
         "on-click": "pamixer -t",
         "on-click-right": "pavucontrol",

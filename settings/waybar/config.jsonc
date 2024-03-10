@@ -10,7 +10,7 @@
     "margin-right": 0,
     "spacing": 10,
     // "exclusive": true,
-    // "height": 44,
+    "height": 44,
     // "mod": "dock",
     // "gtk-layer-shell": true,
     // "output": "!eDP-1",
@@ -22,11 +22,11 @@
     // Choose the order of the modules
 
     "modules-left": [
-        "hyprland/language",
+        "battery",
+        "temperature",
         "pulseaudio",
         "backlight",
-        "temperature",
-        "battery",
+        "hyprland/language",
     ],
     "modules-center": [
         "hyprland/workspaces"

@@ -23,7 +23,7 @@
 #waybar {
 	/*font-family: 'Source Code Pro', sans-serif;*/
 	font-family: 'FontAwesome';
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 400;
   color: @base04;
   background: rgba(0, 0, 0, 1.0);

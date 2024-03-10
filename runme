@@ -90,11 +90,7 @@ software_stage=(
     gdu
     iftop
     inxi
-    kde-cli-tools
     kitty
-    kompare
-    krename
-    krusader
     kvantum
     libmad
     libva
@@ -150,6 +146,9 @@ software_stage=(
     unzip
     zathura
     zathura-pdf-poppler
+    # Easy Effects
+    easyeffects
+    lsp-plugins
     # Fonts
     adobe-source-sans-fonts
     awesome-terminal-fonts
@@ -158,6 +157,11 @@ software_stage=(
     ttf-jetbrains-mono
     ttf-jetbrains-mono-nerd
     ttf-mononoki-nerd
+    # Krusader
+    #krename
+    #krusader
+    #kompare
+    #kde-cli-tools
 )
 
 # Themes to install
