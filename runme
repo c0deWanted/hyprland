@@ -56,7 +56,8 @@ hyprland_stage=(
     hyprland
     mako
     pipewire
-    polkit-kde-agent
+    polkit-gnome
+    #polkit-kde-agent
     qt5-wayland
     qt6-wayland
     sddm
