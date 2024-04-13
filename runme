@@ -93,6 +93,7 @@ software_stage=(
     inxi
     kitty
     kvantum
+    kvantum-qt5
     libmad
     libva
     libzip
@@ -159,10 +160,10 @@ software_stage=(
     ttf-jetbrains-mono-nerd
     ttf-mononoki-nerd
     # Krusader
-    #krename
-    #krusader
-    #kompare
-    #kde-cli-tools
+    krename
+    krusader
+    kompare
+    kde-cli-tools
 )
 
 # Themes to install
