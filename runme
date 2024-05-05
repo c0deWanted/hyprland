@@ -173,7 +173,8 @@ themes_stage=(
    # qogir-gtk-theme
    # kvantum-theme-qogir-git
    # nordzy-icon-theme
-    fluent-icon-theme-git
+   # fluent-icon-theme-git
+    papirus-icon-theme
     sweet-gtk-theme-mars-git
    # kali-themes
     simplicity-sddm-theme-git
@@ -331,8 +332,8 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
 
     echo -e "$CNT - Setup GTK..."
     gsettings set org.gnome.desktop.interface gtk-theme Sweet-Mars
-    gsettings set org.gnome.desktop.interface icon-theme Nordzy-dark
-    gsettings set org.gnome.desktop.interface cursor-theme Vimix-White
+    #gsettings set org.gnome.desktop.interface icon-theme Nordzy-dark
+    #gsettings set org.gnome.desktop.interface cursor-theme Vimix-White
     gsettings set org.gnome.desktop.interface font-name Noto-Sans
     gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans 22'
     gsettings set org.gnome.desktop.interface font-name 'Noto Sans 22'
