@@ -43,14 +43,27 @@ file-roller
 geeqie
 gimp
 #gvfs-smb
+hardinfo2-git
 #hw-probe
 libreoffice-fresh
 meld
+neofetch
 #obsidian
 #okular
 opencl-clover-mesa
 #pv
 solaar
+speedtest-cli
+zathura
+zathura-pdf-poppler
+# Easy Effects
+easyeffects
+lsp-plugins
+# Krusader
+krename
+krusader
+kompare
+kde-cli-tools
 )
 
 for name in "${list[@]}" ; do

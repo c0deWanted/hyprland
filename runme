@@ -292,9 +292,9 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     echo 'QT_QPA_PLATFORMTHEME=qt5ct' | sudo tee -a /etc/environment &>> $INSTLOG
     sleep 2
     # Kvantum 
-    echo -e "$CNT - Qt5 Settings..."
-    echo 'QT_STYLE_OVERRIDE=kvantum' | sudo tee -a /etc/environment &>> $INSTLOG
-    sleep 2
+    #echo -e "$CNT - Qt5 Settings..."
+    #echo 'QT_STYLE_OVERRIDE=kvantum' | sudo tee -a /etc/environment &>> $INSTLOG
+    #sleep 2
 
     # Stage 0 - Hyprland
     echo -e "$CNT - HYPRLAND..."

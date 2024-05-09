@@ -3,9 +3,9 @@
 
 installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
-sudo pacman -S --noconfirm --needed emacs
-git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
-~/.emacs.d/bin/doom install
+sudo pacman -S --noconfirm --needed emacs-wayland
+git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
 
-# Copy doom config and sync
-#cp -rf $installed_dir/.doom.d* $HOME/
+# Copy doom config
+cp -rf $installed_dir/config/doom $HOME/.config/
