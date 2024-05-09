@@ -85,7 +85,6 @@ software_stage=(
     gnome-calculator
     gnome-disk-utility
     grim
-    hardinfo-git
     hblock
     htop
     gdu
@@ -103,11 +102,9 @@ software_stage=(
     #lxappearance
     man-db
     man-pages
-    meld
     mlocate
     mousepad
     mpv
-    neofetch
     networkmanager
     network-manager-applet
     networkmanager-openvpn
@@ -127,7 +124,6 @@ software_stage=(
     rsync
     slurp
     smartmontools
-    speedtest-cli
     swappy
     swaybg
     swaylock-effects-git
@@ -148,11 +144,6 @@ software_stage=(
     unace
     unrar
     unzip
-    zathura
-    zathura-pdf-poppler
-    # Easy Effects
-    easyeffects
-    lsp-plugins
     # Fonts
     adobe-source-sans-fonts
     awesome-terminal-fonts
@@ -161,11 +152,6 @@ software_stage=(
     ttf-jetbrains-mono
     ttf-jetbrains-mono-nerd
     ttf-mononoki-nerd
-    # Krusader
-    krename
-    krusader
-    kompare
-    kde-cli-tools
 )
 
 # Themes to install
