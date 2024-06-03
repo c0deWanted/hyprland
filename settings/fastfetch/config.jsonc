@@ -70,6 +70,11 @@
       "keyColor": "yellow",
     },
     {
+      "type": "de",
+      "key": "├ ",
+      "keyColor": "yellow",
+    },
+    {
       "type": "wm",
       "key": "├ ",
       "keyColor": "yellow",
