@@ -47,7 +47,6 @@ hardinfo2-git
 #hw-probe
 libreoffice-fresh
 meld
-neofetch
 #obsidian
 #okular
 opencl-clover-mesa
