@@ -46,6 +46,7 @@ gimp
 hardinfo2-git
 #hw-probe
 libreoffice-fresh
+librewolf-bin
 meld
 #obsidian
 #okular

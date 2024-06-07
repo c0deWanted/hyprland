@@ -72,6 +72,7 @@ software_stage=(
     alacritty
     avahi
     bash-completion
+    baobab
     brightnessctl
     cmake
     cpupower
@@ -120,6 +121,7 @@ software_stage=(
     python-pywal
     python-requests
     qt5ct
+    qt6ct
     ripgrep
     rsync
     slurp
