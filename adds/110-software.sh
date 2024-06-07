@@ -43,7 +43,7 @@ file-roller
 geeqie
 gimp
 #gvfs-smb
-hardinfo2-git
+hardinfo2
 #hw-probe
 libreoffice-fresh
 librewolf-bin
