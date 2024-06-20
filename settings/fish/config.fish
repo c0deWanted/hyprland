@@ -112,7 +112,7 @@ end
 
 ### ALIASES ###
 #my
-alias mullvad='cd /home/oh/AppImages/mullvad-browser && ./start-mullvad-browser.desktop'
+alias cphypr='cp .config/hypr/hyprland.conf c0deWanted/hyprland/settings/hypr/hyprland.conf'
 alias showusers='awk -F ":" \'{print $1}\' /etc/passwd'
 alias yask='xrandr --output DP-4 --gamma 0.9 --brightness 0.6'
 alias wru='xprop | grep WM_CLASS'
