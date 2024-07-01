@@ -19,7 +19,7 @@ hyprctl keyword decoration:dim_strength 0.2
 hyprctl keyword decoration:dim_special 0.3
 hyprctl keyword decoration:active_opacity 0.9
 hyprctl keyword decoration:inactive_opacity 0.8
-hyprctl keyword decoration:fullscreen_opacity 0.9
+hyprctl keyword decoration:fullscreen_opacity 1.0
 
 # Decoration Blur
 hyprctl keyword decoration:blur:enabled true
