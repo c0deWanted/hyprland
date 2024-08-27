@@ -48,6 +48,7 @@ hardinfo2
 libreoffice-fresh
 librewolf-bin
 meld
+nvme-cli
 #obsidian
 #okular
 opencl-clover-mesa
