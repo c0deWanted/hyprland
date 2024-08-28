@@ -158,12 +158,12 @@ software_stage=(
 
 # Themes to install
 themes_stage=(
-   # qogir-gtk-theme
-   # kvantum-theme-qogir-git
+    qogir-gtk-theme
+    kvantum-theme-qogir-git
    # nordzy-icon-theme
-   # fluent-icon-theme-git
+    fluent-icon-theme-git
     papirus-icon-theme
-    sweet-gtk-theme-mars-git
+   # sweet-gtk-theme-mars-git
    # kali-themes
     simplicity-sddm-theme-git
     vimix-cursors
