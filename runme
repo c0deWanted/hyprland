@@ -158,6 +158,7 @@ software_stage=(
 
 # Themes to install
 themes_stage=(
+    gruvbox-dark-gtk
     qogir-gtk-theme
     kvantum-theme-qogir-git
    # nordzy-icon-theme
@@ -319,7 +320,8 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     done
 
     echo -e "$CNT - Setup GTK..."
-    gsettings set org.gnome.desktop.interface gtk-theme Sweet-Mars
+    gsettings set org.gnome.desktop.interface gtk-theme gruvbox-dark-gtk
+    #gsettings set org.gnome.desktop.interface gtk-theme Sweet-Mars
     #gsettings set org.gnome.desktop.interface icon-theme Nordzy-dark
     #gsettings set org.gnome.desktop.interface cursor-theme Vimix-White
     gsettings set org.gnome.desktop.interface font-name Noto-Sans
