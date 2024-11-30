@@ -1,17 +1,36 @@
+@define-color base00 #181818;
+@define-color base01 #df6900;
+@define-color base02 #374656;
+@define-color base03 #303c4b;
+@define-color base04 #cdd6f4;
+@define-color base05 #d8d8d8;
+@define-color base06 #e8e8e8;
+@define-color base07 #f8f8f8;
+@define-color base08 #f20202;
+@define-color base09 #7a00ff;
+@define-color base0A #ffbf00;
+@define-color base0B #00e1b4;
+@define-color base0C #6F88A4;
+@define-color base0D #a6adc8;
+@define-color base0E #18baeb;
+@define-color base0F #85e100;
 
-@define-color base00 #282828;
-@define-color base01 #cc241d;
-@define-color base02 #d65d0e;
-@define-color base03 #d79921;
-@define-color base04 #98971a;
-@define-color base05 #689d6a;
-@define-color base06 #458588;
-@define-color base07 #b16286;
-@define-color base08 #1d2021;
-@define-color base09 #a6adc8;
-@define-color base0A #e8e8e8;
-
-
+/*
+ *
+01 -> 02
+02 -> 00
+03 -> 00
+04 -> 07
+05,6,7 -> 0A
+08 -> 01
+09 -> 07
+0A -> 03
+0B -> 05
+0C -> 06
+0D -> 04
+0E -> 06
+0F -> 05
+ **/
 * {
   transition: none;
   box-shadow: none;
@@ -22,12 +41,12 @@
 	font-family: 'FontAwesome';
 	font-size: 1.1em;
 	font-weight: 400;
-  color: @base07;
-  background: @base00;
+  color: @base04;
+  background: rgba(0, 0, 0, 1.0);
 }
 
 tooltip {
-    background: @base08;
+    background: #1e1e2e;
     opacity: 0.8;
     font-family: 'Noto Sans';
     font-size: 1.2em;
@@ -35,7 +54,7 @@ tooltip {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @base04;
+    border-color: #11111b;
 }
 #workspaces {
   padding-left: 15px;
@@ -46,27 +65,27 @@ tooltip {
 #workspaces button {
   margin: 0px 0;
   padding: 0 8px;
-  color: @base06;
+  color: @base0C;
 }
 
 #custom-exit {
-  color: @base05;
+  color: @base0B;
 }
 
 #workspaces button.visible {
-  color: @base07;
+  color: @base09;
 }
 
 #workspaces button.active {
-  color: @base03;
+  color: @base0A;
 }
 
 #workspaces button.focused {
-  color: @base04;
+  color: @base0D;
 }
 
 #workspaces button.urgent {
-  color: @base01;
+  color: rgba(238, 46, 36, 1);
 }
 
 #backlight {
@@ -74,7 +93,7 @@ tooltip {
   padding: 0 6px;
   min-width: 20px;
   border-radius: 5px;
-  color: @base03;
+  color: @base0A;
 
 }
 
@@ -85,12 +104,12 @@ tooltip {
   padding: 0 6px;
   min-width: 20px;
   border-radius: 5px;
-  color: @base04;
+  color: @base0D;
   /* border: 1.5px solid @base03; */
 }
 
 #custom-system {
-  color: @base06;
+  color: @base0C;
   font-size: 1.2em;
   padding: 0px 8px;
   margin: 0px 3px;
@@ -98,26 +117,26 @@ tooltip {
   font-size: 1.2em;
 }
 #pulseaudio.muted {
-  color: @base05;
+  color: @base0F;
 }
 #pulseaudio.bluetooth {
-  color: @base06;
+  color: @base0E;
 }
 
 #bluetooth.on {
-  color: @base06;
+  color: @base0C;
 }
 
 #bluetooth.connected {
-  color: @base06;
+  color: @base0E;
 }
 
 #bluetooth.disabled {
-  color: @base0A;
+  color: @base02;
 }
 
 #bluetooth.off {
-  color: @base0A;
+  color: @base02;
 }
 
 #window {
@@ -126,21 +145,21 @@ tooltip {
 	font-family: sans-serif;
 }
 #language {
-  color: @base01;
+  color: @base08;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
 }
 
 #custom-launch_wofi {
-  color: @base06;
+  color: @base0E;
   padding-left: 10px;
   padding-right: 20px;
   border-radius: 5px;
 }
 
 #custom-power_btn {
-  color: @base05;
+  color: @base0B;
   padding-left: 10px;
   padding-right: 10px;
   /* border: 1.5px solid @base03; */
@@ -148,14 +167,14 @@ tooltip {
 }
 
 #custom-htop {
-  color: @base06;
+  color: @base0E;
   padding: 0px 8px;
   margin: 0px 3px;
   border: 0px;
   font-size: 1.2em;
 }
 #custom-hardinfo {
-  color: @base06;
+  color: @base0E;
   padding: 0px 8px;
   margin: 0px 3px;
   border: 0px;
@@ -170,7 +189,7 @@ tooltip {
   border: 0px;
 }*/
 #custom-web {
-  color: @base06;
+  color: @base0E;
   font-size: 1.2em;
   padding: 0px 8px;
   margin: 0px 3px;
@@ -178,7 +197,7 @@ tooltip {
   font-size: 1.2em;
 }
 #custom-emacs {
-  color: @base06;
+  color: @base0E;
   font-size: 1.2em;
   padding: 0px 8px;
   margin: 0px 3px;
@@ -186,7 +205,7 @@ tooltip {
   font-size: 1.2em;
 }
 #custom-virt {
-  color: @base06;
+  color: @base0E;
   font-size: 1.2em;
   padding: 0px 8px;
   margin: 0px 3px;
@@ -202,28 +221,28 @@ tooltip {
   /* border: 1.5px solid @base03; */
 }
 #battery.full {
-  color: @base05;
+  color: @base0B;
 }
 #battery.good {
-  color: @base05;
+  color: @base0B;
 }
 #battery.discharging {
-  color: @base03;
+  color: @base0A;
 }
 #battery.warning {
-  color: @base02;
+  color: @base00;
 }
 #battery.critical {
-  color: @base01;
+  color: @base08;
 }
 #battery.charging {
-  color: @base06;
+  color: @base0E;
 }
 #battery.plugged {
-  color: @base05;
+  color: @base0B;
 }
 #custom-updates {
-  color: @base06;
+  color: @base0E;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
@@ -232,19 +251,19 @@ tooltip {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
-  color: @base03;
+  color: @base0A;
 }
 #pulseaudio.muted {
-  color: @base01;
+  color: @base08;
 }
 #temperature {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
-  color: @base03;
+  color: @base0A;
 }
 #temperature.critical {
-  color: @base01;
+  color: @base08;
 }
 #clock {
 	font-family: 'Noto Sans Medium';
@@ -253,7 +272,7 @@ tooltip {
   padding-right: 10px;
   /* border: 1.5px solid @base03; */
   border-radius: 5px;
-  color: @base0A;
+  color: @base07;
 }
 #tray {
   padding-left: 10px;
