@@ -3,18 +3,17 @@
 #Hyprland Warm Theme
 #
 # General
-hyprctl keyword general:border_size 3
-hyprctl keyword general:gaps_in 15
-hyprctl keyword general:gaps_out 25
+hyprctl keyword general:border_size 0
+hyprctl keyword general:gaps_in 5
+hyprctl keyword general:gaps_out 5
 hyprctl keyword general:col.active_border 0xffffbf00 0xffdf6900 120deg
 hyprctl keyword general:col.inactive_border 0x64ffbf00 0x64df6900 90deg
 hyprctl keyword general:layout dwindle
 hyprctl keyword general:resize_on_border true
 
 # Decoration
-hyprctl keyword decoration:rounding 6
-hyprctl keyword decoration:drop_shadow false
-hyprctl keyword decoration:dim_inactive true
+hyprctl keyword decoration:rounding 16
+hyprctl keyword decoration:dim_inactive false
 hyprctl keyword decoration:dim_strength 0.2
 hyprctl keyword decoration:dim_special 0.3
 hyprctl keyword decoration:active_opacity 0.9

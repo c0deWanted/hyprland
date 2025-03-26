@@ -54,6 +54,7 @@ install_software() {
 # Hyprland
 hyprland_stage=(
     hyprland
+    hyprland-qtutils
     mako
     pipewire
     polkit-gnome
